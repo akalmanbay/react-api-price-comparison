@@ -1,8 +1,15 @@
+import test_img from "../Listing/assets/image.png";
 export default function Card(props) {
-  let { img, name, price, volume, address } = props.props;
+  let { name, final_price } = props.props;
+  let { volume, address, img } = {
+    volume: "750ml",
+    address: "Алматы, Кордай 15",
+    img: test_img,
+  };
+  console.log(name, final_price);
 
   return (
-    <div class="px-3 py-2 flex-cols justify-center w-40 max-w-sm text-gray-100 dark:text-gray-600 bg-gray-800 border border-gray-700 rounded-lg shadow-sm dark:bg-white dark:border-gray-400">
+    <div className="px-3 py-2 my-1 mx-1 flex-cols justify-center w-40 max-w-sm text-gray-100 dark:text-gray-600 bg-gray-800 border border-gray-700 rounded-lg shadow-sm dark:bg-white dark:border-gray-400">
       <div className="p-4">
         <img class="product_image rounded-xl" src={img} alt="product image" />
       </div>
@@ -12,9 +19,9 @@ export default function Card(props) {
             {name}
           </h5>
         </div>
-        {/* px-2.5 py-1  */}
+
         <div class="price_volume_line my-2 flex items-center justify-around">
-          <span class="price text-base font-bold">{price} тг</span>
+          <span class="price text-base font-bold">{final_price} тг</span>
           <div class="volume px-1 py-0.5 bg-blue-100 text-blue-800 text-xs font-semibold rounded-sm dark:bg-blue-200 dark:text-blue-800">
             {volume}
           </div>
