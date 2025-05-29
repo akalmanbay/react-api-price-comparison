@@ -1,12 +1,12 @@
-import Card from "./components/Card";
+import Listing from "./components/Listing";
 import "./App.css";
 import NavBar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-[#FFF6EE] w-full h-full">
+    <div className="bg-gray-200 dark:bg-gray-900 w-full h-full flex-col px-8">
       <NavBar />
-      <Card />
+      <Listing />
     </div>
   );
 }
