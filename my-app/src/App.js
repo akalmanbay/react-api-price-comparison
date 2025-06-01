@@ -1,14 +1,16 @@
-import Listing from "./components/Listing";
+import Table from "./components/Table";
 import "./App.css";
 import NavBar from "./components/Navbar";
 import Search from "./components/Search";
 
 function App() {
   return (
-    <div className="bg-gray-200 dark:bg-gray-900 w-full h-full flex-col px-8">
+    <div className="flex-col self-center text-xs md:text-sm text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 w-full h-full mx-auto md:px-8">
       <NavBar />
+
       <Search />
-      <Listing />
+
+      <Table />
     </div>
   );
 }
