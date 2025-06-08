@@ -14,17 +14,19 @@ export default function NavBar() {
   }, [darkMode]);
 
   return (
-    <nav className="py-5 flex justify-between items-center transition-colors duration-300">
-      <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-        Price Comparison
-      </h1>
-      <ul className="flex justify-end w-8/12 text-gray-700 dark:text-gray-300">
-        <li className="px-1 md:px-5 hover:underline cursor-pointer">Home</li>
+    <nav className="p-7 md:p-5 flex justify-between items-center transition-colors duration-300">
+      <h2 className="md:text-xl font-bold text-gray-800 dark:text-white">
+        Сравнение цен на продукты: Казахстан
+      </h2>
+      <ul className="hidden md:flex justify-end items-center md:w-8/12 text-gray-700 dark:text-gray-300">
         <li className="px-1 md:px-5 hover:underline cursor-pointer">
-          About Us
+          Динамика цен
         </li>
         <li className="px-1 md:px-5 hover:underline cursor-pointer">
-          Contacts
+          Контакты
+        </li>
+        <li className="px-1 md:px-5 hover:underline cursor-pointer">
+          Избранное
         </li>
       </ul>
 
